@@ -7,6 +7,7 @@ function App() {
         <a href="/">Habesha</a>
       </header>
       <main>Available Products</main>
+      <div className></div>
     </div>
   );
 }
