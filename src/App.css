@@ -27,6 +27,10 @@
 .App-link {
   color: #61dafb;
 }
+.habesha {
+  position: static;
+  top: 0%;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +39,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.items {
+  border: 1px #282c34 solid;
+  margin: 1rem;
+  width: 250px;
+}
+.items img {
+  width: 100%;
 }
