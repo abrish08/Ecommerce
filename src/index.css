@@ -7,19 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  padding: 1rem;
-  background-color: #404040;
-  color: #000;
+.site-container {
+  min-height: 100vh;
 }
-header a {
-  text-decoration: none;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #ffffffff;
-  position: static;
+main {
+  flex: 1;
 }
-main a {
-  text-decoration: none;
-  font-weight: bolder;
+.img-large {
+  max-width: 100%;
+}
+.img-thumbnail {
+  height: 80px;
+}
+.small-container {
+  max-width: 600px;
 }

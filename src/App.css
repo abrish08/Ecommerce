@@ -27,10 +27,6 @@
 .App-link {
   color: #61dafb;
 }
-.habesha {
-  position: static;
-  top: 0%;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -51,4 +47,10 @@
 }
 .items img {
   width: 100%;
+}
+.loading {
+  text-decoration: green;
+}
+.img-large {
+  max-width: 100%;
 }

@@ -34,7 +34,6 @@ function ProductsDescription() {
     loading: true,
     error: '',
   });
-  // const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,8 +45,6 @@ function ProductsDescription() {
       } catch (error) {
         dispatch({ type: 'FETCH_FAIL', payload: getError(error) });
       }
-
-      // setProducts(result.data);
     };
     fetchData();
   }, [name]);
@@ -75,11 +72,13 @@ function ProductsDescription() {
     <div>
       <Row>
         <Col md={6}>
-          <img
-            className="img-large"
-            src={product.image}
-            alt={product.slug}
-          ></img>
+          <Card>
+            <img
+              src={product.image}
+              alt={product.slug}
+              className="img-fluid rounded img-thumbinal"
+            ></img>
+          </Card>
         </Col>
         <Col md={3}>
           <ListGroup>
