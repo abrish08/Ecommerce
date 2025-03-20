@@ -1,8 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
-import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -13,9 +11,8 @@ export default function SignIn() {
 
   return (
     <Container className="small-container">
-      <Helmet>
-        <title>Sign In</title>
-      </Helmet>
+      <title>Sign In</title>
+
       <h2 className="my-3"> Sign In</h2>
 
       <Form>

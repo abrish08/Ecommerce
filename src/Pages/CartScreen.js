@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 
 import ListGroup from 'react-bootstrap/esm/ListGroup';
 import Row from 'react-bootstrap/esm/Row';
-import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
 import MessageBox from '../components/MessageBox';
 import { Store } from '../Store';
@@ -38,10 +37,6 @@ export default function CartScreen() {
   };
   return (
     <div>
-      <Helmet>
-        <title>Shopping Cart</title>
-      </Helmet>
-
       <h1> Products in the Cart</h1>
 
       <Row>

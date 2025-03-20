@@ -8,7 +8,6 @@ import Col from 'react-bootstrap/col';
 //import data from '../Data';
 import axios from 'axios';
 import Product from '../components/Product';
-import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 
@@ -51,9 +50,7 @@ function HomePage() {
 
   return (
     <div>
-      <Helmet>
-        <title>Ecommerce</title>
-      </Helmet>
+      <title>Ecommerce</title>
       <h1>Available Products</h1>
       <div className="products">
         {loading ? (

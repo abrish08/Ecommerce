@@ -9,7 +9,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { useParams } from 'react-router-dom';
 import Rating from '../Rating';
 import Button from 'react-bootstrap/esm/Button';
-import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { getError } from '../Utils';
@@ -83,9 +82,8 @@ function ProductsDescription() {
         <Col md={3}>
           <ListGroup>
             <ListGroup.Item>
-              <Helmet>
-                <title> {product.name} </title>
-              </Helmet>
+              <title> {product.name} </title>
+
               <Rating>{product.Rating}</Rating>
             </ListGroup.Item>
             <ListGroup.Item>{product.price}</ListGroup.Item>
